@@ -2,7 +2,7 @@ from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-engine = create_engine("postgresql://evr:1@localhost:5432/parser", echo=False)
+engine = create_engine("postgresql://postgres:postgres@localhost:5432/parser", echo=False)
 Session = sessionmaker(bind=engine)
 Base = declarative_base()
 

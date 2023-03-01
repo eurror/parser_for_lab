@@ -44,7 +44,7 @@ def parse_appartments():
     session = Session()
     driver = webdriver.Chrome()
 
-    for i in range(1, 3):
+    for i in range(1, 100):
         url = f'https://www.kijiji.ca/b-apartments-condos/city-of-toronto/page-{i}/c37l1700273'
         driver.get(url)
         appartments = driver.find_elements(
