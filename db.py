@@ -12,11 +12,11 @@ class Appartment(Base):
 
     id = Column(Integer, primary_key=True)
     title = Column(String(255), nullable=False)
-    price = Column(String(255))
     currency = Column(String(255))
+    price = Column(String(255))
+    date = Column(String(255))
     location = Column(String(255))
     image = Column(String(255))
-    date = Column(String(255))
 
 
 Base.metadata.create_all(engine)
