@@ -1,6 +1,6 @@
 # Parser
 
-This parser will allow you to parse places for housing from the [kijiji website](https://www.kijiji.ca/b-apartments-condos/city-of-toronto/c37l1700273)  and load all of the data into postgreSQL.
+This parser allows you to parse places for housing from the [kijiji website](https://www.kijiji.ca/b-apartments-condos/city-of-toronto/c37l1700273)  and upload all of the parsed data into postgreSQL.
 
 Also [Docker image]() is available.
 
