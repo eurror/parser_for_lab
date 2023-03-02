@@ -9,9 +9,11 @@ Also [Docker image]() is available.
 ```bash
 git clone git@github.com:eurror/parser_for_lab.git
 ```
-2. Change database settings in **parser/db.py**
-```python
-engine = create_engine("postgresql://<db_user>:<db_password>@localhost:5432/<db_name>", echo=False)
+2. Create .env file in main directory and fill next fields
+```bash
+DB_USER=#your db username
+DB_PASSWORD=#password for user
+DB_NAME=#name of your database
 ```
 3. After you're done with steps above, start **parser/main.py** file
 ```bash

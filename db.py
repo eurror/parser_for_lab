@@ -1,8 +1,14 @@
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
+from decouple import config
 
-engine = create_engine("postgresql://postgres:postgres@localhost:5432/parser", echo=False)
+
+DB_USER = config('DB_USER')
+DB_PASSWORD = config('DB_PASSWORD')
+DB_NAME = config('DB_NAME')
+
+engine = create_engine(f"postgresql://{DB_USER}:{DB_PASSWORD}@localhost:5432/{DB_NAME}", echo=False)
 Session = sessionmaker(bind=engine)
 Base = declarative_base()
 
